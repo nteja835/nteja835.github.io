@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNIST CANTEEN LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+            <h2 class="active"> Order Form </h2>
+
+            <form method="POST" action="https://script.google.com/macros/s/AKfycbx2HTeJYGBMhvnuNjzaDOkTLAtqFWO4KCqAm0pttDKzSepR5I87oKCr5NCB7tHl3A/exec">
+                <input type="text" id="item" class="fadeIn second"  name="item"placeholder="Order item">
+                <input type="text" id="quantity" class="fadeIn second" name="quantity" placeholder="Quantity">
+                <input type="text" id="rn" class="fadeIn second" name="rn" placeholder="Roll Number">
+                <input type="text" id="time" class="fadeIn third"  name="time" placeholder="Time HH:MM">
+                <input type="submit" onclick="confirmation() " class="fadeIn fourth" value="Order">
+            </form>
+
+            <div id="formFooter">
+                <a class="btn" href="menu.html">Menu</a>
+                <a class="btn" href="home.html">|Home</a>
+              </div>
+        </div>
+    </div>
+    <script>
+        function confirmation() {
+            
+                var num = '0123456789'
+                var idLength = 7
+                var id = ''
+                for (var i = 0; i <= idLength; i++) {
+                    var randomNumber = Math.floor(Math.random() * num.length);
+                    id += num.substring(randomNumber, randomNumber + 1);
+                }
+                alert("order Id : " + id + "  Order Placed");
+
+
+            }
+    </script>
+</body>
+
+</html>

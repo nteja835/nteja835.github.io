@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNIST CANTEEN REGISTRATION</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> New User </h2>      
+          <!-- Login Form -->
+          <form method="POST" action="https://script.google.com/macros/s/AKfycbyrvFxeeeMT83Y0UBWghBprOrkcJfuuDeSpArSdnvj1Fek8EoRekKGLSRFxZehd3_VC/exec">
+            <input type="text" id="name" class="fadeIn second" name="name" placeholder="Name">
+            <input type="text" id="RollId" class="fadeIn second"  name="rollid" placeholder="Roll Number / Employee Id">
+            <input type="text" id="dept" class="fadeIn second" name="department" placeholder="Department">
+            <input type="email" id="login" class="fadeIn second" name="email" placeholder="Email ID">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+            <input type="submit" onclick="confirmation()" class="fadeIn fourth" value="Register">
+          </form>
+          <div id="formFooter">
+            <a class="underlineHover" href="login.html">Already have an account?     </a>
+            <a class="underlineHover" href="home.html">    Home</a>
+          </div>
+      
+        </div>
+      </div>
+      <script>
+        function confirmation()
+        {
+          alert("Registration Successfull")
+        }
+      </script>
+
+</body>
+</html>

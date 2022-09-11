@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="heading">
+            <h1>SNIST CANTEEN</h1>
+            <h3>Menu</h3>
+        </div>
+        <div class="food-items">
+            <img id="idly" src="images/idly.png"  alt="" onclick="addtocart('Idly')">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Idly">Idly</h3>
+                    <h3 class="price" ><i>Rs.40</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover"  href="order.html" onclick="addtocart('Idly')" >Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/puri.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Puri">Puri</h3>
+                    <h3 class="price" ><i>Rs.40</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Puri" onclick="storepuri()">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/meals.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Meals">Meals</h3>
+                    <h3 class="price" ><i>Rs.100</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Meals">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/maincourse.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Biryani">Biryani</h3>
+                    <h3 class="price" ><i>Rs.100</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Biryani">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fastfood.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Noodles">Noodles</h3>
+                    <h3 class="price" ><i>Rs.80</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Noodles">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/friedrice.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3  id="Fried Rice">Fried Rice</h3>
+                    <h3 class="price" ><i>Rs.80</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Fried Rice">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/oreo.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Oreo Thickshake">Oreo Thickshake</h3>
+                    <h3 class="price" ><i>Rs.150</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Oreo Thickshake">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/kitkat.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Kitkat Thickshake">Kitkat Thickshake</h3>
+                    <h3 class="price" ><i>Rs.150</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Kitkat Thickshake">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/grape.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Grape Juice">Grape Juice</h3>
+                    <h3 class="price" ><i>Rs.20</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Grape Juice">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/mangojuice.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Mango Juice">Mango Juice</h3>
+                    <h3 class="price" ><i>Rs.20</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="Mango Juice">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/frenchfries.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="French Fries">French Fries</h3>
+                    <h3 class="price" ><i>Rs.70</i></h3>
+                </div>
+                <div class="cart">
+                <a class="underlineHover" href="order.html" id="French Fries">Add To Cart</a></div>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/nuggets.png" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h3 id="Nuggets">Nuggets</h3>
+                    <h3 class="price" ><i>Rs.70</i></h3>
+                </div>
+                <div class="cart" >
+                <a class="underlineHover" href="order.html" id="Nuggets">Add To Cart</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
